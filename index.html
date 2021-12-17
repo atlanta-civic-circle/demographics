@@ -1,0 +1,230 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Where Georgians live in 2020 - Atlanta Civic Circle</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script><style>@media print {#ghostery-tracker-tally {display:none !important}}</style>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+
+
+
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+h2, h3 {
+    margin: 10px;
+    font-size: 1.2em;
+}
+h3 {
+    font-size: 1em;
+}
+p {
+    font-size: 0.85em;
+    margin: 10px;
+    text-align: left;
+}
+.map-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.65);
+    margin-right: 20px;
+    font-family: sans serif;
+    overflow: auto;
+    border-radius: 3px;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+#features {
+    top: 0;
+    height: 100px;
+    margin-top: 20px;
+    width: 250px;
+}
+#legend {
+    padding: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 17px;
+    height: auto;
+    margin-bottom: 90px;
+    margin-right: 75px;
+    width: 125px;
+}
+.legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+.pd-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.info2 {
+    position: absolute;
+    z-index: 5;
+    font-family: georgia, times new roman, times, serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: rgba(227, 228, 230, 0.5);
+    border-radius: 5px;
+    top: 320px;
+    left: 4%;
+    width: 200px;
+    padding: 15px;
+}
+
+/*.mapboxgl-ctrl-top-right {
+    z-index: 9999999999999999999999999999999999;
+}*/
+
+@media only screen and (max-width: 768px) {
+
+.info2 {
+    bottom: 5vw;
+    left: 1vw;
+    font-size: 3vw;
+    width: 20vw;
+    top: auto;
+}
+.map-overlay {
+    margin-bottom: 0px;
+    /* right: 0vw; */
+    font-size: 3vw;/* width: 20%; */
+        /* top: auto; */
+}
+div#legend {
+    margin-bottom: 5vw;
+    margin-right: 1vw;
+    width: 18vw;
+    height: auto;
+}
+}
+.banner {
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1000000000;
+    position: absolute;
+    top: 6px;
+    vertical-align: baseline;
+}
+.css-logo {
+    width: 189px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.site-header .custom-logo {
+    height: 210px;
+    max-height: 1459px;
+    max-width: 600px;
+    width: 600px
+}
+
+}
+
+@media (max-width: 781px) {
+.site-header .custom-logo {
+    max-width: 175px;
+    max-height: 61px
+}
+}
+.custom-logo-link {
+    box-sizing: content-box;
+    line-height: 1;
+    margin: 0 1rem 0 0;
+    overflow: hidden
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+.custom-logo-link {
+    margin-right: .5rem
+}
+
+
+}
+
+@media only screen and (max-width: 599px) {
+
+.h-cta .site-header .custom-logo-link {
+    max-width: 140px
+}
+.h-cta .site-header .custom-logo-link .custom-logo {
+    max-width: 100%
+}
+
+}
+
+@media only screen and (max-width: 781px) {
+.site-header .custom-logo-link .custom-logo {
+    height: auto;
+    min-height: 45px;
+    object-fit: contain;
+    width: auto
+}
+
+}
+img.logo-img {
+    display: block;
+    max-width: 30vw;
+    background-color: rgba(6, 72, 117, 0.0);
+
+}
+.centered {
+    max-width: 30vw;
+    margin-left: 35vw;
+    margin-right: 35vw;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="banner">
+    <div class="site-branding">
+      <div class="centered" style="color:white; text-align: center"> <a href="https://atlantaciviccircle.org/" aria-label="Atlanta Civic Circle logo. Click to visit the homepage" class="logo-img"> <img class="logo-img" decoding="async" alt="Atlanta Civic Circle" src="https://atlantaciviccircle.org/wp-content/uploads/2021/05/acc-logo-white.png"> </a><br>Explore where Georgians live</div>
+    </div>
+  </div>
+</header>
+
+<iframe src="https://api.mapbox.com/styles/v1/greencracker/ckx9tyvvy0n4q15mf1uoxy3iu.html?title=false&amp;access_token=pk.eyJ1IjoiZ3JlZW5jcmFja2VyIiwiYSI6ImQ5YzBlZDY4N2E3MTRlYjE4Y2ViNmM2NTY3OWMyMjQwIn0.qzrux5_Nbh5ICwJbeMFX4Q&amp;zoomwheel=false#11.16/33.7443/-84.3774" title="Monochrome" style="border:none;" width="100%" height="1000px"></iframe>
+
+
+
+
+<div class="map-overlay" id="legend"> 
+    <div><span class="legend-key" style="background-color: rgb(92, 255, 92);"></span><span> Black</span></div>
+    <div><span class="legend-key" style="background-color: rgb(102, 204, 255);"></span><span> White</span></div><div><span class="legend-key" style="background-color: rgb(255, 77, 77);"></span><span> Asian / Pacific Islander</span></div>
+    <div><span class="legend-key" style="background-color: rgb(255, 150, 51);"></span><span> Hispanic</span></div>
+    <div><span class="legend-key" style="background-color: rgb(225, 0, 255);"></span><span>Other & Multiracial</span></div></div>
+
+    </script>
+<div class="info2">Georgians in 2020 here show up as dots randomly placed near their homes. Zoom in and a dot represents as few as 7 pepople. Zoom out and it represents up to 4,000 folks.</div>
+
+
+
+</body></html>
